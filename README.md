@@ -1,70 +1,79 @@
-# GitHub Codespaces ♥️ React
+# React Todo Application - Onboarding Guide
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+Welcome to the React Todo Application! This project is a simple yet functional Todo app built with React and styled with a blue-and-white theme. It serves as a starting point for exploring React development and implementing new features.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+As part of your onboarding, you'll be working on this application to familiarize yourself with the codebase and demonstrate your skills. Below are some tasks and instructions to help you get started.
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+---
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+## Getting Started
 
-## Available Scripts
+This project was bootstrapped with [Vite](https://vitejs.dev/), providing a fast and modern development experience.
+
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
-
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
-
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+#### `npm start`
+Starts the development server.\
+Open [http://localhost:3000/](http://localhost:3000/) in your browser to view the running application.
 
 The page will reload automatically when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
+Launches the test runner in interactive watch mode.\
+See the section about [running tests](https://vitest.dev/guide/) for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
+#### `npm run build`
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Onboarding Tasks
+
+As part of your onboarding, please complete the following tasks to enhance the application and demonstrate your understanding of React:
+
+### 1. **Add a "Delete Todo" Feature**
+   - Implement a function that allows users to delete a specific todo item.
+   - Update the UI to include a delete button for each todo item.
+
+### 2. **Add a "Clear Completed Todos" Button**
+   - Add a button that removes all completed todos from the list.
+   - Ensure the button is styled consistently with the app's blue-and-white theme.
+
+### 3. **Enhance the Todo List**
+   - Add a feature to edit existing todos.
+   - Include a visual indicator (e.g., a badge) showing the total number of todos and the number of completed todos.
+
+### 4. **Improve Accessibility**
+   - Ensure all interactive elements (buttons, inputs, etc.) are accessible via keyboard navigation.
+   - Add ARIA labels where necessary to improve screen reader support.
+
+### 5. **Add Unit Tests**
+   - Write unit tests for the `addTodo` and `toggleTodo` functions.
+   - Ensure the tests cover edge cases (e.g., adding an empty todo).
+
+### 6. **Refactor the Codebase**
+   - Review the current codebase and identify areas for improvement (e.g., splitting components, optimizing state management).
+   - Refactor the code to improve readability and maintainability.
+
+---
 
 ## Learn More
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+To help you complete the tasks, here are some useful resources:
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+- [React Documentation](https://reactjs.org/)
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [Vitest Documentation](https://vitest.dev/guide/)
+- [Primereact Documentation](https://primereact.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Submission
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
+Once you've completed the tasks, please submit your changes via a pull request. Include a brief description of the changes you made and any challenges you encountered.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
-
-### Advanced Configuration
-
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
-
-### Deployment
-
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
-
-### Troubleshooting
-
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+We look forward to seeing your contributions!
