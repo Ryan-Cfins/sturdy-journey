@@ -1,8 +1,16 @@
+/* General body styling */
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f0f8ff; /* Light blue background */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  color: #003366; /* Dark blue text */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +18,118 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* App container styling */
+.App {
+  text-align: center;
+  background: #ffffff; /* White background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  border: 2px solid #007bff; /* Blue border */
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5rem;
+  color: #003366; /* Dark blue */
+  margin-bottom: 1rem;
+}
+
+/* Input field styling */
+input[type="text"] {
+  width: calc(100% - 2rem);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #003366; /* Darker blue on focus */
+}
+
+/* Button styling */
+button, .p-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #007bff; /* Primary blue */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover, .p-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:focus, .p-button:focus,
+button:focus-visible, .p-button:focus-visible {
+  outline: 4px auto #80bdff; /* Light blue focus outline */
+  outline-offset: 2px;
+}
+
+/* Todo list styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background: #f0f8ff; /* Light blue background */
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888; /* Gray for completed items */
+}
+
+.todo-item:hover {
+  background-color: #e6f2ff; /* Lighter blue on hover */
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  accent-color: #007bff; /* Blue checkmark */
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+  filter: brightness(0.9); /* Slightly darken on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
 }
